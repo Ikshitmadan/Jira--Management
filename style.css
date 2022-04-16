@@ -1,0 +1,189 @@
+*{
+  
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+.toolbox-cont{
+
+    background-color:darkslategray;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+   
+}
+.toolbox-cont>div{
+    margin-left: 1.5rem;
+}
+
+.toolbox-priority-cont{
+    background-color: lightsalmon;
+    height: 3.5rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.action-btn-cont{
+    background-color:limegreen;
+    width: 8rem;
+    height: 3.5rem;
+    display: flex;
+    border: 2px solid magenta;
+    
+}
+.action-btn-cont>div{
+    width: 50%;
+    background-color: brown;
+    margin-left: 1.2px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ced6e0;
+}
+.color{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.lightpink{
+    background-color: lightpink;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+.modal-cont{
+    height: 50vh;
+    width: 40vw;
+    /* ⏬absolute se Document ke flow se bhar nikal diya*/
+    position: absolute;
+    top: 42vh;
+    left: calc((100vw - 40vw)/2);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.textarea-cont{
+    background-color: gray;
+    width: 85%;
+    height: 98%;
+
+    font-size: 43px;
+}
+.priority-color-cont{
+background-color: red;
+height: 100%;
+width: 15%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* display: flex; */
+}
+.priority-color{
+    width: 50%;
+    height: 20%;
+  
+}
+.main-cont{
+    display: flex;
+    gap: 7px;
+    margin-top: 2px;
+
+    justify-content: center;
+   
+    flex-wrap: wrap;
+}
+.ticket-cont{
+    height: 11rem;
+    width: 10rem;
+background-color: lightpink;
+}
+.ticket-color{
+   
+    width: 10rem;
+    height: 0.5rem;
+}
+.ticket-id{
+
+    background-color: lightblue;
+    color: blueviolet;
+    height: 1rem;
+    width: 10rem;
+
+}
+.task-area{
+    background-color:lightblue;
+    height: 7.5rem;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: start;
+}
+.border{
+    border: 5px solid yellow;
+}
+.lock{
+    position: relative;
+    height: 2rem;
+    background-color: lightblue;
+    display: flex;
+    justify-content: end;
+    font-size: 26px;
+}
+.fa-lock{
+    margin-right: 3.2%;
+    position: relative;
+    bottom: -0.6px;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .modal-cont {
+        width: 60vw;
+        left: calc((100vw - 60vw) / 2);
+        top:49vh;
+    }
+    .main-cont{
+        justify-content: center;
+       
+
+    }
+    .toolbox-cont>div {
+        margin-left: 0.5rem;
+
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .modal-cont {
+        width: 75vw;
+        height: 55vh;
+        top: calc((100vh - 55vh) / 2);
+        left: calc((100vw - 75vw) / 2);
+        flex-direction: column;
+    }
+    .textarea-cont {
+        width: 100%;
+        height: 75%;
+    }
+    .priority-colors-cont {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+    .priority-color {
+        width: 17%;
+    }
+    .toolbox-cont>* {
+        margin-left: 2rem;
+        border-radius: 2px;
+    }
+} 
